@@ -114,6 +114,7 @@ import Feedback from './Components/Feedback'
 import Contact from './Components/Contact'
 import Steps from './Components/Steps'
 import Cards from './Components/Cards'
+import AboutUs from './Pages/AboutUs'
 
 const App = () => {
   const location = useLocation();
@@ -165,6 +166,7 @@ const App = () => {
           <Route path="/WellnessGuide" element={<WellnessGuide />} />
           <Route path="/wellness-guide/:section" element={<WellnessGuide />} />
           <Route path="/NotFound" element={<NotFound />} />
+          <Route path="/AboutUs" element={<AboutUs />} />
         </Routes>
       </main>
       

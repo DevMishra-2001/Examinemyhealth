@@ -3,13 +3,12 @@ import { useInView } from "react-intersection-observer";
 import { motion } from "motion/react";
 import { Link } from "react-router-dom";
 
-
 const Navbar = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const { ref, inView } = useInView({
-        triggerOnce: true,
-        threshold: 0.2,
-      });
+    triggerOnce: true,
+    threshold: 0.2,
+  });
 
   return (
     <header className="fixed top-0 left-0 w-full text-white z-50">
@@ -20,12 +19,13 @@ const Navbar = () => {
         <div className="container mx-auto px-4 lg:px-6">
           <div className="flex items-center justify-between py-4">
             {/* Logo */}
-            <motion.div 
-            ref={ref}
-            initial={{ opacity: 0, x: 100 }}
-            animate={inView ? { opacity: 1, x: 0 } : {}}
-            transition={{ delay: 0.3, duration: 0.5 }}
-            className="flex items-center">
+            <motion.div
+              ref={ref}
+              initial={{ opacity: 0, x: 100 }}
+              animate={inView ? { opacity: 1, x: 0 } : {}}
+              transition={{ delay: 0.3, duration: 0.5 }}
+              className="flex items-center"
+            >
               <a href="index.html" className="flex items-center">
                 <img src="/Images/logo.png" alt="logo" className="h-12" />
               </a>
@@ -65,41 +65,45 @@ const Navbar = () => {
             </div>
 
             {/* Desktop Menu */}
-            <motion.nav 
-            ref={ref}
-            initial={{ opacity: 0, y: 100 }}
-            animate={inView ? { opacity: 1, y: 0 } : {}}
-            transition={{ delay: 0.3, duration: 0.5 }}
-            className="hidden md:flex space-x-6">
+            <motion.nav
+              ref={ref}
+              initial={{ opacity: 0, y: 100 }}
+              animate={inView ? { opacity: 1, y: 0 } : {}}
+              transition={{ delay: 0.3, duration: 0.5 }}
+              className="hidden md:flex space-x-6"
+            >
               <NavItem href="index.html" label="Home" active />
 
-              <NavDropdown label="Pages">
-                <DropdownItem href="aboutus.html">About Us</DropdownItem>
-                <DropdownItem href="contactus.html">Contact Us</DropdownItem>
-                <NestedDropdown label="Team">
-                  <DropdownItem href="our-team.html">Our Team</DropdownItem>
-                  <DropdownItem href="team-details.html">
-                    Team Details
-                  </DropdownItem>
-                </NestedDropdown>
-                <DropdownItem href="testimonials.html">
-                  Testimonials
-                </DropdownItem>
-                <DropdownItem href="our-packages.html">
-                  Our Packages
-                </DropdownItem>
-                <NestedDropdown label="Event">
-                  <DropdownItem href="event-grid.html">Event Grid</DropdownItem>
-                  <DropdownItem href="event-detail.html">
-                    Event Detail
-                  </DropdownItem>
-                </NestedDropdown>
-                <DropdownItem href="donate-now.html">Donate Now</DropdownItem>
-                <DropdownItem href="faq.html">FAQ</DropdownItem>
-                <DropdownItem><Link to={"/WellnessGuide"}>Coming Soon</Link></DropdownItem>
-                <DropdownItem href="404-error.html">404 Error</DropdownItem>
-              </NavDropdown>
+              {/* <NavDropdown label="Wellness Guide"> */}
+              {/* <DropdownItem href="aboutus.html">About Us</DropdownItem> */}
+              {/* <DropdownItem href="contactus.html">Contact Us</DropdownItem> */}
+              {/* <NestedDropdown label="Team"> */}
+              {/* <DropdownItem href="our-team.html">Our Team</DropdownItem> */}
+              {/* <DropdownItem href="team-details.html"> */}
+              {/* Team Details */}
+              {/* </DropdownItem> */}
+              {/* </NestedDropdown> */}
+              {/* <DropdownItem href="testimonials.html"> */}
+              {/* Testimonials */}
+              {/* </DropdownItem> */}
+              {/* <DropdownItem href="our-packages.html"> */}
+              {/* Our Packages */}
+              {/* </DropdownItem> */}
+              {/* <NestedDropdown label="Event"> */}
+              {/* <DropdownItem href="event-grid.html">Event Grid</DropdownItem> */}
+              {/* <DropdownItem href="event-detail.html"> */}
+              {/* Event Detail */}
+              {/* </DropdownItem> */}
+              {/* </NestedDropdown> */}
+              {/* <DropdownItem href="donate-now.html">Donate Now</DropdownItem> */}
+              {/* <DropdownItem href="faq.html">FAQ</DropdownItem> */}
+              {/* <DropdownItem><Link to={"/WellnessGuide"}>Coming Soon</Link></DropdownItem> */}
+              {/* <DropdownItem href="404-error.html">404 Error</DropdownItem> */}
+              {/* </NavDropdown> */}
 
+              <NavItem
+                label={<Link to="/WellnessGuide">Wellness Guide</Link>}
+              />
               <NavDropdown label="Services">
                 <DropdownItem href="our-services.html">
                   Our Services
@@ -131,8 +135,8 @@ const Navbar = () => {
                 <DropdownItem href="portfolio-4-columns.html">
                   Portfolio 4 Columns
                 </DropdownItem>
-                <DropdownItem href="portfolio-detail.html">
-                  Portfolio Detail
+                <DropdownItem><Link to={"/AboutUs"}>  Portfolio Detail</Link>
+                
                 </DropdownItem>
               </NavDropdown>
 
@@ -144,13 +148,14 @@ const Navbar = () => {
             </motion.nav>
 
             {/* Action buttons */}
-            
-            <motion.div 
-            ref={ref}
-            initial={{ opacity: 0, x: -100 }}
-            animate={inView ? { opacity: 1, x: 0 } : {}}
-            transition={{ delay: 0.3, duration: 0.5 }}
-            className="hidden md:flex items-center space-x-4">
+
+            <motion.div
+              ref={ref}
+              initial={{ opacity: 0, x: -100 }}
+              animate={inView ? { opacity: 1, x: 0 } : {}}
+              transition={{ delay: 0.3, duration: 0.5 }}
+              className="hidden md:flex items-center space-x-4"
+            >
               <a
                 href="donate-now.html"
                 className="bg-sky-600 text-white px-6 py-2 rounded-full hover:bg-blue-600 transition-colors"
