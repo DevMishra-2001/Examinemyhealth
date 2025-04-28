@@ -235,7 +235,7 @@ const Choose = () => {
                 >
                   <GoDotFill className="w-3 h-3 sm:w-4 sm:h-4 text-yellow-500" />
                   <GoHorizontalRule className="w-8 h-8 sm:w-10 sm:h-10 text-yellow-500" />
-                  <span className="text-blue-600 text-sm sm:text-base font-medium ml-2">
+                  <span className="text-blue-600 text-sm sm:text-base font-medium font-title ml-2">
                     Why Choose Us
                   </span>
                 </motion.div>
@@ -245,7 +245,7 @@ const Choose = () => {
                   initial={{ opacity: 0, x: -50 }}
                   animate={inView ? { opacity: 1, x: 0 } : {}}
                   transition={{ delay: 0.5, duration: 0.7 }}
-                  className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-4"
+                  className="text-2xl sm:text-3xl lg:text-4xl font-medium font-serif mb-4"
                 >
                   We Believe Everyone Deserves a Quality Care
                 </motion.h2>
@@ -255,7 +255,7 @@ const Choose = () => {
                   initial={{ opacity: 0, x: -50 }}
                   animate={inView ? { opacity: 1, x: 0 } : {}}
                   transition={{ delay: 0.7, duration: 0.5 }}
-                  className="mb-6 sm:mb-8 text-sm sm:text-base"
+                  className="mb-6 sm:mb-8 text-sm sm:text-base font-family"
                 >
                   Aging in place can be a possible alternative in case you
                   handiest want minor help together along with your day by day
@@ -289,10 +289,10 @@ const Choose = () => {
                     transition={{ delay: 0.9, duration: 0.5 }}
                     className="flex-grow sm:ml-4"
                   >
-                    <h4 className="text-lg sm:text-xl font-semibold">
+                    <h4 className="text-lg sm:text-xl font-semibold font-family">
                       Daily Heart Checkup
                     </h4>
-                    <p className="text-sm sm:text-base">
+                    <p className="text-sm sm:text-base font-serif">
                       A wellknown decline in fitness is frequently the impetus
                       for the creation of elder care.
                     </p>
@@ -324,10 +324,10 @@ const Choose = () => {
                     transition={{ delay: 1.1, duration: 0.5 }}
                     className="flex-grow sm:ml-4"
                   >
-                    <h4 className="text-lg sm:text-xl font-semibold">
+                    <h4 className="text-lg sm:text-xl font-semibold font-family">
                       Timely Food & Medicine
                     </h4>
-                    <p className="text-sm sm:text-base">
+                    <p className="text-sm sm:text-base font-serif">
                       A wellknown decline in fitness is frequently the impetus
                       for the creation of elder care.
                     </p>

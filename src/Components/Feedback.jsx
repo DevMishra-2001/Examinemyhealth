@@ -208,7 +208,7 @@ const Feedback = () => {
           className="flex items-center justify-center text-center">
             <GoDotFill className="w-4 h-4 text-yellow-500" />
             <GoHorizontalRule className="w-10 h-10 text-yellow-500" />
-            <span className="text-primary text-sm font-semibold uppercase tracking-wider text-sky-600 ml-2">
+            <span className="text-primary text-sm font-semibold font-title uppercase tracking-wider text-sky-600 ml-2">
               Testimonials
             </span>
           </motion.div>
@@ -217,7 +217,7 @@ const Feedback = () => {
           initial={{ opacity: 0, x: -100 }}
           animate={inView ? { opacity: 1, x: 0 } : {}}
           transition={{ delay: 0.3, duration: 0.5 }}
-          className="text-3xl md:text-4xl font-bold mt-2 max-w-md flex items-center justify-center mx-auto">
+          className="text-3xl md:text-4xl font-family mt-2 max-w-md font-semibold flex items-center justify-center mx-auto">
             <span className="text-center">
               What Peoples Says About Our Loves &amp; Caring
             </span>
@@ -269,7 +269,7 @@ const Feedback = () => {
           </div>
 
           {/* Author name */}
-          <h3 className="text-lg sm:text-xl font-medium text-black mb-3">
+          <h3 className="text-lg sm:text-xl font-medium font-serif text-black mb-3">
             {testimonials[currentIndex].author}
           </h3>
 

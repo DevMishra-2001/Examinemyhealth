@@ -36,7 +36,7 @@ const About = () => {
               initial={{ opacity: 0, x: -100 }}
               animate={inView ? { opacity: 1, x: 0 } : {}}
               transition={{ delay: 0.4, duration: 0.6 }}
-              className="text-4xl font-bold mb-6">
+              className="text-4xl font-semibold font-serif mb-6">
                 Health Is The First Step To Prosperity.
               </motion.h2>
               <motion.p 
@@ -44,7 +44,7 @@ const About = () => {
               initial={{ opacity: 0, x: -100 }}
               animate={inView ? { opacity: 1, x: 0 } : {}}
               transition={{ delay: 0.5, duration: 0.7 }}
-              className="mb-8 text-lg lg:w-11/12">
+              className="mb-8 text-lg lg:w-11/12 font-family">
                 A lovecare is a person who cares for the fitness and wellness of
                 someone who wishes assist with day by day obligations and
                 activities.
@@ -65,7 +65,7 @@ const About = () => {
                         </span>
                       </div>
                       <div className="flex-grow ps-4 ms-3">
-                        <p className="mb-0">24/7 Support</p>
+                        <p className="mb-0 font-family">24/7 Support</p>
                       </div>
                     </motion.div>
                   </div>
@@ -82,7 +82,7 @@ const About = () => {
                         </span>
                       </div>
                       <div className="flex-grow ps-4 ms-3">
-                        <p className="mb-0">Free Medical Care</p>
+                        <p className="mb-0 font-family">Free Medical Care</p>
                       </div>
                     </motion.div>
                   </div>
@@ -102,7 +102,7 @@ const About = () => {
                         </span>
                       </div>
                       <div className="flex-grow ps-4 ms-3">
-                        <p className="mb-0">Lovely Envoirment</p>
+                        <p className="mb-0 font-family">Lovely Envoirment</p>
                       </div>
                     </motion.div>
                   </div>
@@ -119,7 +119,7 @@ const About = () => {
                         </span>
                       </div>
                       <div className="flex-grow ps-4 ms-3">
-                        <p className="mb-0">Professional Nursing</p>
+                        <p className="mb-0 font-family">Professional Nursing</p>
                       </div>
                     </motion.div>
                   </div>
@@ -187,7 +187,7 @@ const About = () => {
         </div>
 
         {/* Shape Elements */}
-        <div className="hidden sm:block absolute top-0 left-8 -mt-10 animate-rotateCircle origin-center">
+        <div className="hidden sm:block absolute top-0 left-4 -mt-5 animate-rotateCircle origin-center">
           <img src="/Images/About/shape-02.png" alt="shape" className="filter invert"/>
         </div>
         <div className="hidden sm:block absolute bottom-0 right-0 animate-slowBounce opacity-20">

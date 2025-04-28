@@ -11,7 +11,7 @@ const Navbar = () => {
   });
 
   return (
-    <header className="fixed top-0 left-0 w-full text-white z-50">
+    <header className="fixed font-family top-0 left-0 w-full text-white z-50">
       <div
         className="relative bg-opacity-50 bg-cover bg-center"
         style={{ backgroundImage: "url('/Images/Bg/sky.jpg')" }}
@@ -128,7 +128,7 @@ const Navbar = () => {
                 </DropdownItem>
               </NavDropdown>
 
-              <NavDropdown label="Portfolio">
+              {/* <NavDropdown label="Portfolio">
                 <DropdownItem href="portfolio-3-columns.html">
                   Portfolio 3 Columns
                 </DropdownItem>
@@ -138,13 +138,14 @@ const Navbar = () => {
                 <DropdownItem><Link to={"/AboutUs"}>  Portfolio Detail</Link>
                 
                 </DropdownItem>
-              </NavDropdown>
-
-              <NavDropdown label="Blog">
+              </NavDropdown> */}
+              <NavItem label={<Link to="/AboutUs">About Us</Link>} />
+              <NavItem label={<Link to>Contact Us</Link>} />
+              {/* <NavDropdown label="Blog">
                 <DropdownItem href="blog-grid.html">Blog Grid</DropdownItem>
                 <DropdownItem href="blog-list.html">Blog List</DropdownItem>
                 <DropdownItem href="blog-detail.html">Blog Detail</DropdownItem>
-              </NavDropdown>
+              </NavDropdown> */}
             </motion.nav>
 
             {/* Action buttons */}
@@ -168,9 +169,11 @@ const Navbar = () => {
           {/* Mobile Menu */}
           {mobileMenuOpen && (
             <div className="md:hidden bg-gray-700 pb-4">
-              <MobileNavItem href="index.html" label="Home" active />
-              <MobileNavDropdown label="Pages">
-                <MobileDropdownItem href="aboutus.html">
+              <MobileNavItem label={<Link to="/">Home</Link>} active />
+              <MobileNavItem
+                label={<Link to="/WellnessGuide">Wellness Guide</Link>}
+              >
+                {/* <MobileDropdownItem href="aboutus.html">
                   About Us
                 </MobileDropdownItem>
                 <MobileDropdownItem href="contactus.html">
@@ -207,8 +210,12 @@ const Navbar = () => {
                 </MobileDropdownItem>
                 <MobileDropdownItem href="404-error.html">
                   404 Error
-                </MobileDropdownItem>
-              </MobileNavDropdown>
+                </MobileDropdownItem> */}
+              </MobileNavItem>
+              <MobileNavItem
+                label={<Link to="/AboutUs">About Us</Link>}
+              ></MobileNavItem>
+              <MobileNavItem label={<Link>Contact Us</Link>}></MobileNavItem>
 
               {/* Add other mobile menu items */}
               <div className="px-4 pt-4 border-t border-gray-600">
@@ -328,7 +335,7 @@ const MobileNavItem = ({ href, label, active }) => {
     <a
       href={href}
       className={`block px-4 py-2 text-base font-medium ${
-        active ? "text-white" : "text-gray-600 hover:text-gray-800"
+        active ? "text-blue-500" : "text-white hover:text-blue-800"
       } transition-colors`}
     >
       {label}

@@ -33,8 +33,8 @@ const Footer = () => {
                animate={inView ? { opacity: 1, x: 0 } : {}}
                transition={{ delay: 0.4, duration: 0.6 }}
               className="flex-grow border-l border-gray-600 pl-4 ml-3 p-2">
-                <h5 className="text-sm text-white">Phone Number</h5>
-                <span className="text-white opacity-90 text-sm">
+                <h5 className="text-sm text-white font-title">Phone Number</h5>
+                <span className="text-white opacity-90 text-sm font-serif">
                   (+44) 123 456 789
                 </span>
               </motion.div>
@@ -55,8 +55,8 @@ const Footer = () => {
                animate={inView ? { opacity: 1, x: 0 } : {}}
                transition={{ delay: 0.6, duration: 0.8 }}
               className="flex-grow border-l border-gray-600 pl-4 ml-3">
-                <h5 className="text-sm text-white">Email Address</h5>
-                <span className="text-white opacity-90 text-sm">
+                <h5 className="text-sm text-white font-title">Email Address</h5>
+                <span className="text-white opacity-90 text-sm font-serif">
                   info@example.com
                 </span>
               </motion.div>
@@ -77,8 +77,8 @@ const Footer = () => {
                animate={inView ? { opacity: 1, x: 0 } : {}}
                transition={{ delay: 0.8, duration: 1.0 }}
               className="flex-grow border-l border-gray-600 pl-4 ml-3">
-                <h5 className="text-sm text-white">Location</h5>
-                <span className="text-white opacity-90 text-sm">
+                <h5 className="text-sm text-white font-title">Location</h5>
+                <span className="text-white opacity-90 text-sm font-serif">
                   66 Guild Street , North Town.
                 </span>
               </motion.div>
@@ -149,7 +149,7 @@ const Footer = () => {
               initial={{ opacity: 0, x: -100 }}
               animate={inView ? { opacity: 1, x: 0 } : {}}
               transition={{ delay: 0.4, duration: 0.6 }}
-              className="text-white mb-4 opacity-90">
+              className="text-white mb-4 opacity-90 font-serif">
                 Lovecare A trustedname for caring for someone. Seniors stay
                 their lifestyles of their very own manner right here what they
                 need No you can trouble them right here.
@@ -182,9 +182,9 @@ const Footer = () => {
               animate={inView ? { opacity: 1, x: 0 } : {}}
               transition={{ delay: 0.6, duration: 0.8 }}
               className="sm:pl-2">
-                <h4 className="text-lg text-white">Quick Links</h4>
+                <h4 className="text-lg text-white font-serif">Quick Links</h4>
                 <div className="w-16 h-1 bg-sky-600 my-3"></div>
-                <ul className="space-y-2">
+                <ul className="space-y-2 font-family">
                   <li>
                     <a
                       href=""
@@ -229,9 +229,9 @@ const Footer = () => {
                animate={inView ? { opacity: 1, x: 0 } : {}}
                transition={{ delay: 0.8, duration: 1.0 }}
               className="lg:pl-2">
-                <h4 className="text-lg text-white">Our Services</h4>
+                <h4 className="text-lg text-white font-serif">Our Services</h4>
                 <div className="w-16 h-1 bg-sky-600 my-3"></div>
-                <ul className="space-y-2">
+                <ul className="space-y-2 font-family">
                   <li>
                     <a
                       href="physical-care.html"
@@ -277,9 +277,9 @@ const Footer = () => {
                animate={inView ? { opacity: 1, x: 0 } : {}}
                transition={{ delay: 0.9, duration: 1.1 }}
               className="lg:pl-2">
-                <h4 className="text-lg text-white">Legal</h4>
+                <h4 className="text-lg text-white font-serif">Legal</h4>
                 <div className="w-16 h-1 bg-sky-600 my-3"></div>
-                <ul className="space-y-2">
+                <ul className="space-y-2 font-family">
                   <li>
                     <a
                       href="physical-care.html"
@@ -325,7 +325,7 @@ const Footer = () => {
               initial={{ opacity: 0, y: -100 }}
               animate={inView ? { opacity: 1, y: 0 } : {}}
               transition={{ delay: 0.4, duration: 0.6 }}
-              className="text-white text-sm">
+              className="text-white text-sm font-family">
                 © <span>{currentYear}</span> All Rights Reserved.Powered By RSB
                 Healthcare
               </motion.p>

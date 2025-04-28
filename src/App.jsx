@@ -120,6 +120,7 @@ const App = () => {
   const location = useLocation();
   const isHomePage = location.pathname === '/';
   const isNotFoundPage = location.pathname === '/NotFound';
+  
 
   return (
     <div className="flex flex-col min-h-screen">
@@ -134,10 +135,10 @@ const App = () => {
               {/* Wrap all other components in a container with proper spacing */}
               <div className="container mx-auto px-4">
                 <div className="mt-24">
-                  <Cards />
+                  <About />
                 </div>
                 <div className="mt-24">
-                  <About />
+                  <Cards />
                 </div>
                 <div className="mt-24">
                   <Count />

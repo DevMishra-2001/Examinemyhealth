@@ -53,15 +53,15 @@ const Contact = () => {
              transition={{ delay: 0.3, duration: 0.5 }}
             className="w-full ml-5 translate-y-5 mt-5">
               <div className="bg-white rounded-lg shadow-lg p-6 md:p-12">
-                <h2 className="text-2xl font-bold mb-3">Quick Contact Form</h2>
-                <p className="mb-4">
+                <h2 className="text-2xl font-bold mb-3 font-family">Quick Contact Form</h2>
+                <p className="mb-4 font-serif">
                   We are committed to providing excellent service for our
                   customers.
                 </p>
                 <form onSubmit={handleSubmit}>
                   <div className="w-full">
                     <div className="flex flex-wrap">
-                      <h2 className="mb-4 text-2xl font-bold w-full">
+                      <h2 className="mb-4 text-2xl font-semibold font-title w-full">
                         Drop Message For Any Query
                       </h2>
 
@@ -70,12 +70,12 @@ const Contact = () => {
                         <div className="mb-4">
                           <label
                             htmlFor="name"
-                            className="block mb-1 font-medium"
+                            className="block mb-1 font-medium font-serif"
                           >
                             Your Name <span className="text-red-500">*</span>
                           </label>
                           <input
-                            className="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
+                            className="w-full px-4 py-2 border font-family border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
                             id="name"
                             type="text"
                             name="name"
@@ -92,12 +92,12 @@ const Contact = () => {
                         <div className="mb-4">
                           <label
                             htmlFor="email"
-                            className="block mb-1 font-medium"
+                            className="block mb-1 font-medium font-serif"
                           >
                             Your Email <span className="text-red-500">*</span>
                           </label>
                           <input
-                            className="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
+                            className="w-full px-4 py-2 border font-family border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
                             id="email"
                             type="email"
                             name="email"
@@ -114,12 +114,12 @@ const Contact = () => {
                         <div className="mb-4">
                           <label
                             htmlFor="subject"
-                            className="block mb-1 font-medium"
+                            className="block mb-1 font-medium font-serif"
                           >
                             Your Subject <span className="text-red-500">*</span>
                           </label>
                           <input
-                            className="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
+                            className="w-full px-4 py-2 border font-family border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
                             id="subject"
                             type="text"
                             name="subject"
@@ -136,12 +136,12 @@ const Contact = () => {
                         <div className="mb-4">
                           <label
                             htmlFor="phone"
-                            className="block mb-1 font-medium"
+                            className="block mb-1 font-medium font-serif"
                           >
                             Contact Number
                           </label>
                           <input
-                            className="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
+                            className="w-full px-4 py-2 border border-gray-300 font-family rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
                             id="phone"
                             type="text"
                             name="phone"
@@ -157,12 +157,12 @@ const Contact = () => {
                         <div className="mb-4">
                           <label
                             htmlFor="message"
-                            className="block mb-1 font-medium"
+                            className="block mb-1 font-medium font-serif"
                           >
                             Message <span className="text-red-500">*</span>
                           </label>
                           <textarea
-                            className="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
+                            className="w-full px-4 py-2 font-family border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
                             id="message"
                             name="message"
                             rows="3"
@@ -200,7 +200,7 @@ const Contact = () => {
                       <div className="w-full mb-4">
                         <div className="text-left">
                           <button
-                            className="bg-blue-600 hover:bg-blue-700 text-white font-medium py-2 px-6 rounded transition duration-300"
+                            className="bg-blue-600 hover:bg-blue-700 text-white font-title font-medium py-2 px-6 rounded transition duration-300"
                             type="submit"
                           >
                             Send Message
@@ -231,7 +231,7 @@ const Contact = () => {
               className="flex text-center items-center">
               <GoDotFill className="w-4 h-4 text-yellow-500" />
               <GoHorizontalRule className="w-10 h-10 text-yellow-500" />
-              <span className="block mb-2 p-2 text-sm font-medium uppercase text-sky-600">
+              <span className="block mb-2 p-2 text-sm font-medium uppercase text-sky-600 font-title">
                 Get In Touch
               </span>
               </motion.div>
@@ -240,7 +240,7 @@ const Contact = () => {
               initial={{ opacity: 0, x: 100 }}
               animate={inView ? { opacity: 1, x: 0 } : {}}
               transition={{ delay: 0.6, duration: 0.8 }}
-              className="mb-4 text-4xl font-bold">
+              className="mb-4 text-4xl font-semibold font-family">
                 Join Us and Let's Have A Talk About Something Interesting!
               </motion.h2>
               <motion.p 
@@ -248,7 +248,7 @@ const Contact = () => {
               initial={{ opacity: 0, x: 100 }}
               animate={inView ? { opacity: 1, x: 0 } : {}}
               transition={{ delay: 0.8, duration: 1.0 }}
-              className="mb-8 lg:w-11/12">
+              className="mb-8 lg:w-11/12 font-serif">
                 Write as some words about your question and we will put together
                 your question for you inside 24 hours and tell you shortly.
               </motion.p>
@@ -273,7 +273,7 @@ const Contact = () => {
                       ></path>
                     </svg>
                   </span>
-                  <span className="inline-block ml-2">
+                  <span className="inline-block ml-2 font-family">
                     66 Guild Street 512B, Great North Town.
                   </span>
                 </motion.li>
@@ -294,7 +294,7 @@ const Contact = () => {
                       <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"></path>
                     </svg>
                   </span>
-                  <span className="inline-block ml-2">info@example.com</span>
+                  <span className="inline-block ml-2 font-serif">info@example.com</span>
                 </motion.li>
                 <motion.li 
                 ref={ref}
@@ -312,7 +312,7 @@ const Contact = () => {
                       <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"></path>
                     </svg>
                   </span>
-                  <span className="inline-block ml-2">(+44) 123 456 789</span>
+                  <span className="inline-block ml-2 font-family">(+44) 123 456 789</span>
                 </motion.li>
                 <motion.li 
                 ref={ref}
@@ -335,7 +335,7 @@ const Contact = () => {
                     </svg>
                   </span>
                   <span className="inline-block ml-2">
-                    Mon - Sat: <span className="ml-2">09:00am - 06:00pm</span>
+                    Mon - Sat: <span className="ml-2 font-family">09:00am - 06:00pm</span>
                   </span>
                 </motion.li>
               </ul>

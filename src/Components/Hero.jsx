@@ -696,7 +696,7 @@ const Hero = () => {
         }}
       >
         {/* Slider container */}
-        <div className="relative w-full overflow-hidden h-full">
+        <div className="relative w-full overflow-hidden min-h-screen">
           {slides.map((slide, index) => (
             <div
               key={slide.id}
@@ -728,7 +728,7 @@ const Hero = () => {
                         <div className="flex items-center">
                           <GoDotFill className="w-3 h-3 md:w-4 md:h-4 text-yellow-500" />
                           <GoHorizontalRule className="w-6 h-6 md:w-10 md:h-10 text-yellow-500" />
-                          <span className="text-base sm:text-lg md:text-xl text-white ml-2">
+                          <span className="text-base sm:text-lg md:text-xl text-white ml-2 font-serif">
                             Welcome to Senior Lovecare
                           </span>
                         </div>
@@ -736,7 +736,7 @@ const Hero = () => {
 
                       {/* Title */}
                       <h1
-                        className={`text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-2 md:mb-4 text-white transform ${
+                        className={`text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-family font-bold mb-2 md:mb-4 text-white transform ${
                           showTitle
                             ? "animate-slide-in-right translate-x-0 opacity-100"
                             : "translate-x-8 opacity-0"
@@ -747,7 +747,7 @@ const Hero = () => {
 
                       {/* Description */}
                       <p
-                        className={`mb-4 md:mb-6 text-sm sm:text-base md:text-lg text-white opacity-90 transform ${
+                        className={`mb-4 md:mb-6 text-sm sm:text-base md:text-lg text-white font-title opacity-90 transform ${
                           showDescription
                             ? "animate-slide-in-right translate-x-0 opacity-90"
                             : "translate-x-8 opacity-0"
@@ -766,13 +766,13 @@ const Hero = () => {
                       >
                         <a
                           href="#"
-                          className="px-4 sm:px-5 md:px-6 py-2 md:py-3 text-sm md:text-base bg-transparent border-2 border-white text-white font-medium rounded mr-2 sm:mr-4 mb-2 hover:bg-white hover:text-blue-900 transition"
+                          className="px-4 sm:px-5 md:px-6 py-2 md:py-3 text-sm md:text-base bg-transparent border-2 border-white text-white font-medium font-title rounded mr-2 sm:mr-4 mb-2 hover:bg-white hover:text-blue-900 transition"
                         >
                           Read More
                         </a>
                         <a
                           href="#"
-                          className="px-4 sm:px-5 md:px-6 py-2 md:py-3 text-sm md:text-base bg-transparent border-2 border-white text-white font-medium rounded mb-2 hover:bg-white hover:text-blue-900 transition"
+                          className="px-4 sm:px-5 md:px-6 py-2 md:py-3 text-sm md:text-base bg-transparent border-2 border-white text-white font-medium font-title rounded mb-2 hover:bg-white hover:text-blue-900 transition"
                         >
                           Contact Us
                         </a>

@@ -283,7 +283,7 @@ const Count = () => {
       style={{ backgroundImage: "url(/Images/Bg/sky.jpg)" }}
       ref={ref}
     >
-      <div className="absolute inset-0 bg-blue-900/10 backdrop-blur-sm"></div>
+      {/* <div className="absolute inset-0 bg-blue-900/10 backdrop-blur-sm"></div> */}
       
       <div className="relative z-10 w-full py-12 md:py-16 px-4">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6 max-w-7xl mx-auto">
@@ -296,12 +296,12 @@ const Count = () => {
               className="bg-white rounded-xl p-5 shadow-md hover:shadow-lg transition-shadow duration-300"
             >
               <div className="flex flex-col items-start">
-                <div className="bg-yellow-100 rounded-lg p-3 mb-3 w-full">
-                  <span className="text-4xl sm:text-5xl font-bold text-teal-800 block text-center">
+                <div className="bg-yellow-200/60 rounded-lg p-3 mb-3 w-16">
+                  <span className="text-4xl sm:text-5xl font-bold font-family text-teal-800 block text-center">
                     {item.value}+
                   </span>
                 </div>
-                <p className="text-gray-700 text-base sm:text-lg font-medium">{item.label}</p>
+                <p className="text-gray-700 text-base sm:text-lg font-medium font-serif">{item.label}</p>
               </div>
             </motion.div>
           ))}

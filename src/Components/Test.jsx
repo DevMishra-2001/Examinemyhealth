@@ -531,7 +531,7 @@ const Test = () => {
             >
               <GoDotFill className="w-3 h-3 md:w-4 md:h-4 text-yellow-500" />
               <GoHorizontalRule className="w-8 h-8 md:w-10 md:h-10 text-yellow-500" />
-              <span className="text-sky-600 text-sm md:text-base font-medium mb-2 block ml-2">
+              <span className="text-sky-600 text-sm md:text-base font-title font-medium mb-2 block ml-2">
                 What We Do
               </span>
             </motion.div>
@@ -542,7 +542,7 @@ const Test = () => {
               transition={{ delay: 0.4, duration: 0.6 }}
               className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 max-w-xl mx-auto px-2"
             >
-              <span className="flex items-center justify-center text-center">
+              <span className="flex items-center font-serif justify-center text-center">
                 We Take Care Our Senior Not Only For Money
               </span>
             </motion.h2>
@@ -554,14 +554,14 @@ const Test = () => {
             }`}
           >
             {/* Carousel container */}
-            <div className="flex overflow-hidden">
+            <div className="flex">
               <div className="flex flex-col md:flex-row">
                 {currentServices.map((service) => (
                   <div
                     key={service.id}
                     className="w-full md:w-1/3 px-2 md:px-3 flex-shrink-0 mb-6 md:mb-0"
                   >
-                    <div className="bg-white rounded-lg shadow-lg overflow-hidden">
+                    <div className="bg-white rounded-3xl shadow-lg overflow-hidden">
                       <motion.div 
                         ref={ref}
                         initial={{ opacity: 0, x: -100 }}
@@ -600,7 +600,7 @@ const Test = () => {
                         >
                           <a
                             href={service.link}
-                            className="text-gray-900 hover:text-blue-600 transition-colors"
+                            className="text-gray-900 hover:text-blue-600 font-title transition-colors"
                           >
                             {service.title}
                           </a>
@@ -610,13 +610,13 @@ const Test = () => {
                           initial={{ opacity: 0, y: -100 }}
                           animate={inView ? { opacity: 1, y: 0 } : {}}
                           transition={{ delay: 0.8, duration: 1.0 }}
-                          className="text-sm md:text-base text-gray-600 mb-3 mx-auto"
+                          className="text-sm md:text-base text-gray-600 mb-3 font-serif mx-auto"
                         >
                           {service.description}
                         </motion.p>
                         <a
                           href={service.link}
-                          className="text-blue-600 font-medium hover:text-blue-800 inline-block text-sm md:text-base"
+                          className="text-blue-600 font-title font-medium hover:text-blue-800 inline-block text-sm md:text-base"
                         >
                           Read More
                         </a>
