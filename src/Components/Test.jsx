@@ -564,8 +564,8 @@ const Test = () => {
                     <div className="bg-white rounded-3xl shadow-lg overflow-hidden">
                       <motion.div 
                         ref={ref}
-                        initial={{ opacity: 0, x: -100 }}
-                        animate={inView ? { opacity: 1, x: 0 } : {}}
+                        initial={{ opacity: 0, y: 100 }}
+                        animate={inView ? { opacity: 1, y: 0 } : {}}
                         transition={{ delay: 0.5, duration: 0.7 }}
                         className="relative"
                       >
@@ -579,7 +579,7 @@ const Test = () => {
                         <div className="flex justify-center mb-4">
                           <motion.div 
                             ref={ref}
-                            initial={{ opacity: 0, y: 100 }}
+                            initial={{ opacity: 0, y: -100 }}
                             animate={inView ? { opacity: 1, y: 0 } : {}}
                             transition={{ delay: 0.6, duration: 0.8 }}
                             className="w-12 h-12 md:w-16 md:h-16 flex items-center justify-center rounded-full bg-green-500 mx-auto"
@@ -593,8 +593,8 @@ const Test = () => {
                         </div>
                         <motion.h3 
                           ref={ref}
-                          initial={{ opacity: 0, x: -100 }}
-                          animate={inView ? { opacity: 1, x: 0 } : {}}
+                          initial={{ opacity: 0, y: -100 }}
+                          animate={inView ? { opacity: 1, y: 0 } : {}}
                           transition={{ delay: 0.7, duration: 0.9 }}
                           className="text-lg md:text-xl font-semibold mb-2 md:mb-3"
                         >
