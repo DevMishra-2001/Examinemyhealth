@@ -72,7 +72,7 @@ const Navbar = () => {
               transition={{ delay: 0.3, duration: 0.5 }}
               className="hidden md:flex space-x-6"
             >
-              <NavItem href="index.html" label="Home" active />
+              <NavItem label={<Link to={"/"}>Home</Link>} active />
 
               {/* <NavDropdown label="Wellness Guide"> */}
               {/* <DropdownItem href="aboutus.html">About Us</DropdownItem> */}
