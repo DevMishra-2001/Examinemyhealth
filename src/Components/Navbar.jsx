@@ -603,8 +603,8 @@ const Navbar = () => {
 
             {/* Desktop Menu */}
             <nav className="hidden md:flex space-x-6">
-              <NavItem href="/" label="Home" active />
-              <NavItem href="/WellnessGuide" label="Wellness Guide" />
+              <NavItem label={<Link to={"/"}>Home</Link>} active />
+              <NavItem label={<Link to={"/WellnessGuide"}>Wellness Guide</Link>} />
               <NavDropdown label="Services">
                 <DropdownItem href="our-services.html">
                   Our Services
@@ -628,7 +628,7 @@ const Navbar = () => {
                   Residential Care
                 </DropdownItem>
               </NavDropdown>
-              <NavItem href="/AboutUs" label="About Us" />
+              <NavItem label={<Link to={"/AboutUs"}>About Us</Link>} />
               <NavItem label={<Link to={"/NotFound"} >Contact us</Link>} />
             </nav>
 
