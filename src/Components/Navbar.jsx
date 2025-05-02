@@ -472,6 +472,7 @@ import React, { useState, useEffect } from "react";
 import {  FaInstagram, FaLinkedinIn, FaMobileAlt, FaTwitter } from "react-icons/fa";
 import { FiFacebook } from "react-icons/fi";
 import { MdOutlineEmail } from "react-icons/md";
+import { Link } from "react-router-dom";
 
 
 
@@ -628,7 +629,7 @@ const Navbar = () => {
                 </DropdownItem>
               </NavDropdown>
               <NavItem href="/AboutUs" label="About Us" />
-              <NavItem href="/ContactUs" label="Contact Us" />
+              <NavItem label={<Link to={"/NotFound"} >Contact us</Link>} />
             </nav>
 
             {/* Action buttons */}
