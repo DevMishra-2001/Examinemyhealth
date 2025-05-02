@@ -121,6 +121,7 @@ const App = () => {
   const isHomePage = location.pathname === '/';
   const isNotFoundPage = location.pathname === '/NotFound';
   
+  
 
   return (
     <div className="flex flex-col min-h-screen">
