@@ -472,7 +472,7 @@ import React, { useState, useEffect } from "react";
 import {  FaInstagram, FaLinkedinIn, FaMobileAlt, FaTwitter } from "react-icons/fa";
 import { FiFacebook } from "react-icons/fi";
 import { MdOutlineEmail } from "react-icons/md";
-import { TfiEmail } from "react-icons/tfi";
+
 
 
 const Navbar = () => {

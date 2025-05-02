@@ -431,7 +431,7 @@ const Footer = () => {
               </motion.div>
             </div>
             {/* Social Media */}
-            <div className="flex justify-center lg:justify-center animate-fadeIn">
+            <div className="flex animate-fadeIn">
               <motion.ul 
                 initial={{ opacity: 0, x: -100 }}
                 animate={inView ? { opacity: 1, x: 0 } : { opacity: 0, x: -100 }}
