@@ -584,13 +584,13 @@ const Hero = () => {
                       >
                         <a
                           href="#"
-                          className="px-4 sm:px-5 md:px-6 py-2 md:py-3 text-sm md:text-base bg-cyan-400 border-2 border-white text-white font-medium font-title rounded-xl mr-2 sm:mr-4 mb-2 hover:bg-yellow-50 hover:text-blue-500  transition-all"
+                          className="px-4 sm:px-5 md:px-6 py-2 md:py-3 text-sm md:text-base bg-blue-800 text-white font-medium font-title rounded-xl mr-2 sm:mr-4 mb-2 hover:bg-yellow-50 hover:text-blue-500  transition-all"
                         >
                           Read More
                         </a>
                         <a
                           href="#"
-                          className="px-4 sm:px-5 md:px-6 py-2 md:py-3 text-sm md:text-base bg-cyan-400 border-2 border-white text-white font-medium font-title rounded-xl mb-2 hover:bg-yellow-50 hover:text-blue-500 transition-all"
+                          className="px-4 sm:px-5 md:px-6 py-2 md:py-3 text-sm md:text-base bg-blue-800 text-white font-medium font-title rounded-xl mb-2 hover:bg-yellow-50 hover:text-blue-500 transition-all"
                         >
                           Contact Us
                         </a>
@@ -610,7 +610,7 @@ const Hero = () => {
                 onClick={() => goToSlide(index)}
                 className={`w-8 h-8 md:w-10 md:h-10 flex items-center justify-center rounded-xl text-3xl border border-white text-white font-bold font-family transition-all ${
                   currentSlide === index
-                    ? "bg-cyan-400 text-white scale-110"
+                    ? "bg-blue-800 text-white scale-110"
                     : "bg-transparent hover:bg-white hover:bg-opacity-30"
                 }`}
                 aria-label={`Go to slide  ${index + 1}`}

@@ -500,7 +500,7 @@ const Navbar = () => {
   return (
     <header className={`fixed top-0 left-0 w-full text-white z-50 transition-all duration-300 ${scrolled ? 'transform -translate-y-10' : ''}`}>
       {/* Top info bar - will slide up when scrolled */}
-      <div className={`w-full px-4 sm:px-6 lg:px-8 xl:px-10 2xl:px-12 bg-blue-400 py-2 transition-all duration-300 ${scrolled ? 'opacity-0' : 'opacity-100'}`}>
+      <div className={`w-full px-4 sm:px-6 lg:px-8 xl:px-10 2xl:px-12 bg-blue-800 py-2 transition-all duration-300 ${scrolled ? 'opacity-0' : 'opacity-100'}`}>
         <div className="flex flex-wrap justify-between">
           {/* Left Section */}
           <div className="w-full md:w-9/12">
@@ -636,7 +636,7 @@ const Navbar = () => {
             <div className="hidden md:flex items-center space-x-4">
               <a
                 href="/signin"
-                className="bg-sky-600 text-white px-6 py-2 rounded-full hover:bg-blue-600 transition-colors"
+                className="bg-blue-800 text-white px-6 py-2 rounded-full hover:bg-blue-600 transition-colors"
               >
                 Sign In
               </a>
